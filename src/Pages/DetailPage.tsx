@@ -1,6 +1,7 @@
 
 import { useLocation } from "react-router-dom";
 import { Body } from "../Types/apiTypes";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -8,6 +9,7 @@ export function DetailPage() {
     const location = useLocation();
 
     const data: Body = location.state
+    const navigation = useNavigate();
 
     return (
         <>
@@ -20,7 +22,7 @@ export function DetailPage() {
 
         </div>
 
-        <button></button>
+        <button onClick={() => {navigation("./detail" , )}}></button>
 
         </>
 
