@@ -1,8 +1,8 @@
 export interface Welcome {
-    pictures: Result [];
+    pictures: Body [];
 }
 
-export interface Result {
+export interface Body {
     image_id: string
     id: number,
     api_model: string,
@@ -10,7 +10,13 @@ export interface Result {
     is_boosted: false,
     title:string,
     dimensions: string,
-    artist_titles: string    
+    artist_titles: string
+    dimensions_detail: Dimensions    
+}
+
+export interface Dimensions {
+    width: 134,
+    height: 152,
 }
 
 
