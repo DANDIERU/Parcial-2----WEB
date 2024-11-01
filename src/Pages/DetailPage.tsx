@@ -11,10 +11,11 @@ export function DetailPage() {
 
     return (
         <>
-        <div>
-            <img src={data.image_id} alt="" />
+        <div>            
             <h1>Title: {data.title}</h1>
-            <p></p>
+            <img src={`https://www.artic.edu/iiif/2/${data.image_id}/full/843,/0/default.jpg`} alt="" />
+            <p>Dimensions: {data.dimensions}</p>
+            <p>Artist: {data.artist_titles}</p>
             
 
         </div>

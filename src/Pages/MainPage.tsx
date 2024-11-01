@@ -14,7 +14,7 @@ export function MainPage() {
         (
             <ul>
                 <div>
-                    {data && data.map((item)=>(
+                    {data && data.data.map((item)=>(
                         <Card key={item.id} title={item.title} image={item.image_id} allData={item}></Card>
                     ))}
                 </div>
